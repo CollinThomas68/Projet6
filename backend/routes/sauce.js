@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-//lien vers le controller user
+//lien vers le controller sauce
 const sauceCtrl = require('../controllers/sauce');
 //lien vers les middlewares
 const auth = require('../middleware/auth');//lien avec le token d'identification
