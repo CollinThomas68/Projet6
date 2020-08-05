@@ -41,7 +41,7 @@ exports.login = (req,res,next)=>{
           if(!valid){
             return res.status(401).json({error:'Mot de passe incorrect'});//erreur si les hash ne correspondent pas
           }
-          res.status(200).json({//Si le password est ok on renvoir l'userId et le token d'authentification 
+          res.status(200).json({//Si le password est ok on renvoie l'userId et le token d'authentification 
               userId:user._id,
               token: jwt.sign(
                 { userId: user._id },
